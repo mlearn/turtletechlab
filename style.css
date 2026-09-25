@@ -59,7 +59,6 @@ textarea {
     --text-light: #607d89;
 
     --white: #ffffff;
-
     --border: #d8ebef;
 }
 
@@ -123,8 +122,7 @@ textarea {
 
     transform: translateY(-1px);
 
-    box-shadow:
-        0 8px 20px rgba(18, 119, 137, 0.18);
+    box-shadow: 0 8px 20px rgba(18, 119, 137, 0.18);
 }
 
 
@@ -140,8 +138,7 @@ textarea {
 
     background: rgba(255, 255, 255, 0.97);
 
-    border-bottom:
-        1px solid rgba(216, 235, 239, 0.7);
+    border-bottom: 1px solid rgba(216, 235, 239, 0.7);
 
     backdrop-filter: blur(10px);
 }
@@ -282,11 +279,6 @@ textarea {
     background: #ffffff;
 }
 
-
-/*
-   The hero container is our centred visual canvas.
-*/
-
 .hero-container {
     position: relative;
 
@@ -300,20 +292,11 @@ textarea {
 
     overflow: hidden;
 
-    background-image:
-        url("images/hero-background.png");
-
+    background-image: url("images/hero-background.png");
     background-repeat: no-repeat;
-
     background-size: auto 100%;
-
     background-position: center right;
 }
-
-
-/*
-   Gentle white fade behind the hero copy.
-*/
 
 .hero-container::before {
     content: "";
@@ -447,11 +430,13 @@ textarea {
 .services {
     background: #ffffff;
 
-    padding: 68px 0 78px;
+    padding-top: 42px;
+    padding-bottom: 46px;
 }
 
 .services .section-title {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
+
     text-align: center;
 }
 
@@ -474,8 +459,7 @@ textarea {
 
     background: #ffffff;
 
-    box-shadow:
-        0 5px 20px rgba(33, 103, 124, 0.035);
+    box-shadow: 0 5px 20px rgba(33, 103, 124, 0.035);
 
     transition:
         transform 0.2s ease,
@@ -488,8 +472,7 @@ textarea {
 
     border-color: #b8dfe4;
 
-    box-shadow:
-        0 10px 25px rgba(33, 103, 124, 0.08);
+    box-shadow: 0 10px 25px rgba(33, 103, 124, 0.08);
 }
 
 
@@ -514,13 +497,6 @@ textarea {
     background: #eaf7fa;
 }
 
-
-/*
-   IMPORTANT:
-   Every service icon uses exactly ONE stroke colour.
-   No gradients and no second colour.
-*/
-
 .service-icon svg {
     width: 38px;
     height: 38px;
@@ -541,7 +517,6 @@ textarea {
     color: var(--navy);
 
     font-size: 16px;
-
     line-height: 1.35;
 
     font-weight: 700;
@@ -559,30 +534,26 @@ textarea {
 /* =========================================================
    WHY TURTLE TECH
    ========================================================= */
-/* =========================================================
-   WHY TURTLE TECH
-   ========================================================= */
 
 .why-us {
     width: min(1440px, calc(100% - 64px));
     margin-inline: auto;
 
+    padding-top: 42px;
+    padding-bottom: 42px;
+
     background: #eef9fa;
 }
 
-
-/* Section heading */
-
 .why-us .section-title {
+    margin-bottom: 24px;
+
     text-align: center;
-    margin-bottom: 42px;
 }
-
-
-/* Four Why items */
 
 .why-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
 
     gap: 45px;
@@ -591,15 +562,9 @@ textarea {
     margin-inline: auto;
 }
 
-
-/* Individual item */
-
 .why-item {
     text-align: center;
 }
-
-
-/* Icon circle */
 
 .why-icon {
     width: 64px;
@@ -618,9 +583,6 @@ textarea {
     box-shadow: 0 6px 20px rgba(24, 106, 127, 0.08);
 }
 
-
-/* SVG icons */
-
 .why-icon svg {
     width: 38px;
     height: 38px;
@@ -634,9 +596,6 @@ textarea {
     stroke-linejoin: round;
 }
 
-
-/* Item titles */
-
 .why-item h3 {
     margin-bottom: 8px;
 
@@ -644,9 +603,6 @@ textarea {
 
     font-size: 16px;
 }
-
-
-/* Item descriptions */
 
 .why-item p {
     max-width: 240px;
@@ -659,18 +615,23 @@ textarea {
 
     line-height: 1.6;
 }
+
+
 /* =========================================================
    HOW WE WORK
    ========================================================= */
 
 .how-we-work {
     background: #ffffff;
-    padding: 65px 0;
+
+    padding-top: 42px;
+    padding-bottom: 44px;
 }
 
 .how-we-work .section-title {
+    margin-bottom: 24px;
+
     text-align: center;
-    margin-bottom: 42px;
 }
 
 .process {
@@ -684,6 +645,7 @@ textarea {
         1fr;
 
     align-items: start;
+
     gap: 15px;
 
     margin-inline: auto;
@@ -757,24 +719,22 @@ textarea {
 
 
 /* =========================================================
-   ABOUT / CONTACT
-   ========================================================= */
-
-/* =========================================================
-   ABOUT TURTLE TECH LAB
+   ABOUT
    ========================================================= */
 
 .about {
     width: min(1440px, calc(100% - 64px));
     margin-inline: auto;
 
-    background: #eef9fa;
+    padding-top: 38px;
+    padding-bottom: 38px;
 
-    padding: 55px 0;
+    background: #eef9fa;
 }
 
 .about-container {
     display: grid;
+
     grid-template-columns: 1.3fr 0.7fr;
 
     gap: 100px;
@@ -782,11 +742,8 @@ textarea {
     align-items: center;
 }
 
-
-/* About heading */
-
 .about-title {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 
     color: #07577a;
 
@@ -794,25 +751,21 @@ textarea {
     font-weight: 700;
 
     letter-spacing: 0.24em;
+
     text-transform: uppercase;
 }
-
-
-/* Main description */
 
 .about-description {
     max-width: 660px;
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     color: var(--text-light);
 
     font-size: 13px;
+
     line-height: 1.55;
 }
-
-
-/* Tagline */
 
 .about-tagline {
     color: var(--navy);
@@ -823,60 +776,48 @@ textarea {
 
 
 /* =========================================================
-   CONTACT AREA
+   CONTACT
    ========================================================= */
 
 .contact-details {
     padding-left: 35px;
+
     border-left: 1px solid #c7e4e7;
 }
-
-
-/* Location + Email rows */
 
 .contact-item {
     display: flex;
     align-items: center;
 
     gap: 12px;
+
     margin-bottom: 14px;
 
     color: var(--text);
 
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    font-family: inherit;
+
     line-height: 1.5;
 }
 
-
-/* Email link - same appearance as Sydney, Australia */
-
-.contact-item a {
+.contact-item a,
+.contact-item a:link,
+.contact-item a:visited,
+.contact-item a:hover,
+.contact-item a:active {
     color: inherit;
 
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
+    font: inherit;
     line-height: inherit;
 
     text-decoration: none;
 }
 
-
-.contact-item a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
-
 .contact-item a:hover {
     color: var(--teal);
-    text-decoration: none;
 }
-
-
-/* Contact icons */
 
 .contact-icon {
     display: inline-flex;
@@ -884,15 +825,13 @@ textarea {
     justify-content: center;
 
     width: 25px;
+
     flex-shrink: 0;
 
     color: var(--teal);
 
     font-size: 17px;
 }
-
-
-/* Envelope SVG */
 
 .contact-icon svg {
     display: block;
@@ -901,6 +840,7 @@ textarea {
     height: 14px;
 
     fill: none;
+
     stroke: var(--teal);
     stroke-width: 1.8;
 
@@ -908,16 +848,10 @@ textarea {
     stroke-linejoin: round;
 }
 
-
-/* Get in Touch button */
-
 .contact-button {
     margin-top: 12px;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
 
 /* =========================================================
    FOOTER
@@ -927,22 +861,23 @@ textarea {
     width: min(1440px, calc(100% - 64px));
     margin-inline: auto;
 
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     background: #e4f4f8;
+
     color: var(--navy);
-
-    padding: 24px 0;
 }
-
 
 .footer-container {
     display: flex;
     align-items: center;
 
     width: 100%;
+
+    padding-left: 42px;
+    padding-right: 58px;
 }
-
-
-/* Brand */
 
 .footer-brand {
     display: flex;
@@ -960,16 +895,12 @@ textarea {
     white-space: nowrap;
 }
 
-
 .footer-logo {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
 
     object-fit: contain;
 }
-
-
-/* Company details */
 
 .footer-description {
     padding-left: 34px;
@@ -984,9 +915,6 @@ textarea {
     white-space: nowrap;
 }
 
-
-/* LinkedIn */
-
 .footer-social {
     display: flex;
     align-items: center;
@@ -996,7 +924,6 @@ textarea {
     padding-right: 24px;
 }
 
-
 .linkedin-link {
     display: inline-flex;
     align-items: center;
@@ -1005,6 +932,7 @@ textarea {
     width: 28px;
     height: 28px;
 
+    border: 0;
     border-radius: 3px;
 
     background: #07577a;
@@ -1013,9 +941,6 @@ textarea {
     font-size: 15px;
     font-weight: 700;
 }
-
-
-/* Copyright */
 
 .footer-copyright {
     display: flex;
@@ -1033,7 +958,6 @@ textarea {
 
     white-space: nowrap;
 }
-
 
 .footer-copyright p {
     margin: 0;
@@ -1055,8 +979,7 @@ textarea {
     }
 
     .services-grid {
-        grid-template-columns:
-            repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .why-grid {
@@ -1070,7 +993,7 @@ textarea {
 
 
 /* =========================================================
-   HERO — TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -1149,16 +1072,14 @@ textarea {
     /* SERVICES */
 
     .services-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
     /* WHY */
 
     .why-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         row-gap: 45px;
     }
@@ -1179,7 +1100,7 @@ textarea {
     }
 
 
-    /* ABOUT */
+    /* ABOUT / CONTACT */
 
     .about-container {
         grid-template-columns: 1fr;
@@ -1193,143 +1114,28 @@ textarea {
 
         border-left: 0;
 
-        border-top:
-            1px solid #c7e4e7;
+        border-top: 1px solid #c7e4e7;
     }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+    /* FOOTER */
 
-.site-footer {
-    width: min(1440px, calc(100% - 64px));
-    margin-inline: auto;
+    .footer-container {
+        flex-wrap: wrap;
 
-    background: #e7f5f8;
-    color: var(--navy);
+        gap: 20px;
 
-    padding: 18px 0;
+        padding-inline: 30px;
+    }
+
+    .footer-social {
+        margin-left: 0;
+    }
 }
 
-
-/* Main footer row */
-
-.footer-container {
-    display: flex;
-    align-items: center;
-
-    width: 100%;
-
-    gap: 0;
-}
-
-
-/* Logo + Turtle Tech Lab */
-
-.footer-brand {
-    display: flex;
-    align-items: center;
-
-    gap: 10px;
-
-    padding-right: 36px;
-
-    color: var(--navy);
-
-    font-size: 14px;
-    font-weight: 700;
-
-    white-space: nowrap;
-}
-
-
-.footer-logo {
-    width: 44px;
-    height: 44px;
-
-    object-fit: contain;
-}
-
-
-/* QA & Software Testing / Sydney */
-
-.footer-description {
-    padding-left: 36px;
-
-    border-left: 1px solid #afd6df;
-
-    color: var(--text);
-
-    font-size: 12px;
-    line-height: 1.65;
-
-    white-space: nowrap;
-}
-
-
-/* Push right-side items to the end */
-
-.footer-social {
-    display: flex;
-    align-items: center;
-
-    margin-left: auto;
-
-    padding-right: 34px;
-}
-
-
-/* LinkedIn icon */
-
-.linkedin-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 28px;
-    height: 28px;
-
-    border: 0;
-    border-radius: 3px;
-
-    background: #07577a;
-    color: #ffffff;
-
-    font-size: 15px;
-    font-weight: 700;
-}
-
-
-/* Copyright */
-
-.footer-copyright {
-    display: flex;
-    align-items: center;
-
-    min-height: 38px;
-
-    padding-left: 34px;
-
-    border-left: 1px solid #afd6df;
-
-    color: var(--text);
-
-    font-size: 12px;
-
-    white-space: nowrap;
-}
-
-
-.footer-copyright p {
-    margin: 0;
-}
 
 /* =========================================================
-   HERO — MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
@@ -1353,7 +1159,7 @@ textarea {
                 rgba(255, 255, 255, 0.98) 0%,
                 rgba(255, 255, 255, 0.94) 43%,
                 rgba(255, 255, 255, 0.48) 68%,
-                rgba(255, 255, 255, 0.06) 100%
+                rgba(255, 255,255, 0.06) 100%
             );
     }
 
@@ -1398,7 +1204,8 @@ textarea {
         gap: 7px;
     }
 
-    .services-grid {
+    .services-grid,
+    .why-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1406,99 +1213,22 @@ textarea {
         min-height: auto;
     }
 
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
     .footer-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding-inline: 24px;
     }
-}
-}
-/* =========================================================
-   FINAL DESKTOP SPACING REFINEMENT
-   ========================================================= */
 
+    .footer-brand,
+    .footer-description,
+    .footer-social,
+    .footer-copyright {
+        padding-left: 0;
+        padding-right: 0;
 
-/* OUR SERVICES */
-
-.services {
-    padding-top: 42px;
-    padding-bottom: 46px;
-}
-
-.services .section-title {
-    margin-bottom: 22px;
-}
-
-
-/* WHY TURTLE TECH */
-
-.why-us {
-    padding-top: 42px;
-    padding-bottom: 42px;
-}
-
-.why-us .section-title {
-    margin-bottom: 24px;
-}
-
-
-/* HOW WE WORK */
-
-.how-we-work {
-    padding-top: 42px;
-    padding-bottom: 44px;
-}
-
-.how-we-work .section-title {
-    margin-bottom: 24px;
-}
-
-
-/* ABOUT - make the block noticeably more compact */
-
-.about {
-    padding-top: 38px;
-    padding-bottom: 38px;
-}
-
-.about-title {
-    margin-bottom: 14px;
-}
-
-.about-description {
-    margin-bottom: 12px;
-}
-
-
-/* FOOTER - compact like reference */
-
-.site-footer {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.footer-container {
-    padding-left: 42px;
-    padding-right: 58px;
-}
-
-.footer-logo {
-    width: 38px;
-    height: 38px;
-}
-
-.contact-icon svg {
-    width: 14px;
-    height: 14px;
-
-    display: block;
-
-    fill: none;
-    stroke: var(--teal);
-    stroke-width: 1.8;
-
-    stroke-linecap: round;
-    stroke-linejoin: round;
+        border-left: 0;
+    }
 }
