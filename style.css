@@ -862,3 +862,50 @@ a:focus-visible,button:focus-visible {
 
 
 }
+/* Align the desktop hero with the service cards */
+@media (min-width: 1101px) {
+    .hero {
+        width: min(1280px, calc(100% - 112px));
+        margin-inline: auto;
+    }
+
+    .hero-container {
+        width: 100%;
+    }
+
+    .hero-art {
+        background-size: cover;
+    }
+}
+
+/* Remove the blue line below Services */
+.websites {
+    border-top: none;
+}
+/* Contain the coloured sections on desktop */
+@media (min-width: 1101px) {
+    .why-us,
+    .about {
+        width: min(1280px, calc(100% - 112px));
+        margin-inline: auto;
+    }
+
+    .why-us > .container,
+    .about > .container {
+        width: 100%;
+    }
+}
+/* Give text breathing room inside the blue sections */
+@media (min-width: 1101px) {
+    .why-us > .container,
+    .about > .container {
+        padding-inline: 28px;
+    }
+}
+
+@media (min-width: 1101px) {
+    .websites > .container,
+    .how-we-work > .container {
+        padding-inline: 28px;
+    }
+}
