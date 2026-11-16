@@ -29,3 +29,16 @@ test('footer and LinkedIn link are visible', async ({ page }) => {
     footer.getByRole('link', { name: /LinkedIn/ })
   ).toBeVisible();
 });
+test('beta signup email field is visible', async ({ page }) => {
+  await page.goto('/');
+  await expect(
+    page.getByPlaceholder('Your email address')
+  ).toBeVisible();
+});
+
+test('beta signup button is visible', async ({ page }) => {
+  await page.goto('/');
+  await expect(
+    page.getByRole('button', { name: 'Join Beta Group' })
+  ).toBeVisible();
+});
