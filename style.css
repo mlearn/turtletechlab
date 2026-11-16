@@ -514,6 +514,57 @@ a:focus-visible,button:focus-visible {
     padding-left:24px
 }
 
+.beta-signup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.beta-signup input {
+    width: 190px;
+    padding: 9px 11px;
+    border: 1px solid #bed9e1;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 12px;
+}
+
+.beta-signup button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 30px;
+    background: var(--teal);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.beta-signup button:hover {
+    background: #006d81;
+}
+
+#beta-signup-status {
+    font-size: 12px;
+}
+
+@media(max-width:600px) {
+    .beta-signup {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .beta-signup input {
+        flex: 1;
+        min-width: 150px;
+    }
+}
+
+
 .linkedin-link {
     font-family:Arial,Helvetica,sans-serif;
     font-size:16px;
