@@ -39,6 +39,6 @@ test('beta signup email field is visible', async ({ page }) => {
 test('beta signup button is visible', async ({ page }) => {
   await page.goto('/');
   await expect(
-    page.getByRole('button', { name: 'Join Beta Group' })
+    page.getByRole('button', { name: 'Be a Beta Tester' })
   ).toBeVisible();
 });

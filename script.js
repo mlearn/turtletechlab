@@ -67,7 +67,7 @@
             status.textContent = 'Unable to submit. Please try again.';
         } finally {
             button.disabled = false;
-            button.textContent = 'Join Beta Group';
+            button.textContent = 'Be a Beta Tester';
         }
     });
 })();
