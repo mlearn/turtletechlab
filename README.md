@@ -32,6 +32,15 @@ The original website introduced our testing services, approach and contact detai
 - style.css — styling and responsive layouts
 - script.js — mobile navigation
 - images/ — logo and hero artwork
+- robots.txt and sitemap.xml — search engine crawling and indexing
+- tests/ — Playwright tests (`@smoke`, `@regression`, `@feature`, `@seo`)
+
+## SEO
+
+- Page title, meta description, canonical URL and Open Graph tags target software testing and QA services in Sydney.
+- Structured data (schema.org `ProfessionalService`) in index.html uses only details shown on the site.
+- Update `<lastmod>` in sitemap.xml when page content changes.
+- After deploying, submit https://turtletechlab.com/sitemap.xml in Google Search Console.
 
 ## Local preview
 
